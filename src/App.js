@@ -19,13 +19,13 @@ const App = () => {
     <div>
       <Header />
       <main>
-        <section class="main" className='fade-in'><About /></section>
-        <section class="main" className='fade-in'><Projects /></section>
-        <section class="main" className='fade-in'><Experience /></section>
-        <section class="main" className='fade-in'><Education /></section>
-        <section class="main" className='fade-in'><Certifications /></section>
-        <section class="main" className='fade-in'><Skills /></section>
-        <section class="main" className='fade-in'><Contact /></section>
+        <section className='fade-in'><About /></section>
+        <section className='fade-in'><Projects /></section>
+        <section className='fade-in'><Experience /></section>
+        <section className='fade-in'><Education /></section>
+        <section className='fade-in'><Certifications /></section>
+        <section className='fade-in'><Skills /></section>
+        <section className='fade-in'><Contact /></section>
       </main>
       <Footer />
     </div>
