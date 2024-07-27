@@ -8,11 +8,26 @@ body {
   animation: backgroundAnimation 10s infinite alternate;
 }
 
-header, footer {
-  background: linear-gradient(#ffffff89 , #ffffff38 );
-  backdrop-filter: blur(45px); /*  blur effect */
-  border: 1px solid rgba(255, 255, 255, 0.18); /*  border to define edges */
-  box-shadow: 0 4px 24px -1 rgba(0, 0, 0, 0.4); /*  shadow for depth */
+header {
+  background: linear-gradient(#ffffff89, #ffffff38);
+  backdrop-filter: blur(45px); /* blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* border to define edges */
+  box-shadow: 0 4px 24px -1 rgba(0, 0, 0, 0.4); /* shadow for depth */
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px;
+  width: calc(100% - 40px); /* Ensure it fits within the screen with margins */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  background: linear-gradient(#ffffff57, #ffffff15);
+  backdrop-filter: blur(45px); /* blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* border to define edges */
+  box-shadow: 0 4px 24px -1 rgba(0, 0, 0, 0.4); /* shadow for depth */
   padding: 1rem;
   text-align: center;
   border-radius: 10px;
@@ -20,13 +35,21 @@ header, footer {
   width: calc(100% - 40px); /* Ensure it fits within the screen with margins */
 }
 
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: center; /* Center items */
 }
 
 nav ul li {
-  display: inline;
   margin: 0 1rem;
 }
 
@@ -59,11 +82,11 @@ section {
   width: 100%;
   max-width: 800px;
   padding: 2rem;
-  background: linear-gradient(#ffffff57 , #ffffff15 );
+  background: linear-gradient(#ffffff57, #ffffff15);
   border-radius: 45px;
-  backdrop-filter: blur(45px); /*  blur effect */
-  border: 1px solid rgba(255, 255, 255, 0.18); /*  border to define edges */
-  box-shadow: 0 4px 24px -1 rgba(0, 0, 0, 0.4); /*  shadow for depth */
+  backdrop-filter: blur(45px); /* blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* border to define edges */
+  box-shadow: 0 4px 24px -1 rgba(0, 0, 0, 0.4); /* shadow for depth */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -76,12 +99,30 @@ section {
     margin: 10px;
     width: calc(100% - 20px); /* Adjust margins for smaller screens */
   }
+
+  nav ul {
+    flex-direction: column; /* Stack nav items vertically */
+    align-items: center; /* Center nav items */
+  }
+
+  nav ul li {
+    margin: 0.5rem 0; /* Adjust margin for vertical stacking */
+  }
 }
 
 @media (max-width: 480px) {
   header, footer, .card, section {
     margin: 5px;
     width: calc(100% - 10px); /* Adjust margins for smaller screens */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack nav items vertically */
+    align-items: center; /* Center nav items */
+  }
+
+  nav ul li {
+    margin: 0.5rem 0; /* Adjust margin for vertical stacking */
   }
 }
 
