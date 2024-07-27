@@ -13,6 +13,24 @@ import useScrollFadeIn from './scrollEffects';
 
 
 const App = () => {
+
+  document.addEventListener('scroll', function() {
+    const headers = document.querySelectorAll('.section-header');
+    const viewportHeight = window.innerHeight;
+    const threshold = viewportHeight / 1.5; 
+  
+    headers.forEach(header => {
+      const rect = header.getBoundingClientRect();
+      const headerTop = rect.top;
+  
+      if (headerTop < threshold && headerTop + rect.height > 0) {
+        header.classList.add('active');
+      } else {
+        header.classList.remove('active');
+      }
+    });
+  });
+
   useScrollFadeIn();
 
   return (

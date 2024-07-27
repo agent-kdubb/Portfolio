@@ -145,6 +145,26 @@ body {
   #Header {
     color: #000000;
   }
+  
+  .section-header {
+    position: relative;
+    padding-bottom: 10px; /* Space for the line */
+  }
+  
+  .section-header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Initially hidden */
+    height: 2px; /* Line thickness */
+    background-color: #000; /* Line color */
+    transition: width 0.5s; /* Animation duration */
+  }
+  
+  .section-header.active::after {
+    width: 100%; /* Line expands to full width */
+  }
 
   @keyframes backgroundAnimation {
     0% { background: linear-gradient(135deg, #ffcc33, #ff99cc); }
