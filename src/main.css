@@ -80,6 +80,7 @@ section {
   width: 100%;
   max-width: 800px;
   padding: 2rem;
+  margin: 1rem 1rem 1rem 1rem;
   background: linear-gradient(#ffffff57, #ffffff15);
   border-radius: 45px;
   backdrop-filter: blur(45px); /* blur effect */
