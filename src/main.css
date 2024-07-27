@@ -1,211 +1,179 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: linear-gradient(135deg, #ffcc33, #ff99cc);
-    animation: backgroundAnimation 10s infinite alternate;
-  }
-  
-  header {
-    background: linear-gradient(#ffffff89 , #ffffff38 );
-    backdrop-filter: blur(45px); /*  blur effect */
-    border: 1px solid rgba(255, 255, 255, 0.18); /*  border to define edges */
-    box-shadow: 0 4px 24px -1 rgba(0, 0, 0, 0.4); /*  shadow for depth */
-    padding: 1rem;
-    text-align: center;
-    border-radius: 10px;
-    margin: 20px;
-  }
-  footer{
-    background: linear-gradient(#ffffff57 , #ffffff15 );
-    backdrop-filter: blur(45px); /*  blur effect */
-    border: 1px solid rgba(255, 255, 255, 0.18); /*  border to define edges */
-    box-shadow: 0 4px 24px -1 rgba(0, 0, 0, 0.4); /*  shadow for depth */
-    padding: 1rem;
-    text-align: center;
-    border-radius: 10px;
-    margin: 20px;
-    }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 1rem;
-  }
-  
-  nav ul li a {
-    color: #000000;
-    text-decoration: none;
-  }
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #ffcc33, #ff99cc);
+  animation: backgroundAnimation 10s infinite alternate;
+}
 
-  nav ul li a:hover {
-    color: #000000;
-    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
-  }
-  
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  section {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-  }
+header, footer {
+  background: linear-gradient(#ffffff89 , #ffffff38 );
+  backdrop-filter: blur(45px); /*  blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.18); /*  border to define edges */
+  box-shadow: 0 4px 24px -1 rgba(0, 0, 0, 0.4); /*  shadow for depth */
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px;
+  width: calc(100% - 40px); /* Ensure it fits within the screen with margins */
+}
 
-  .card {
-    width: 100%;
-    max-width: 800px;
-    padding: 2rem;
-    background: linear-gradient(#ffffff57 , #ffffff15 );
-    border-radius: 45px;
-    backdrop-filter: blur(45px); /*  blur effect */
-    border: 1px solid rgba(255, 255, 255, 0.18); /*  border to define edges */
-    box-shadow: 0 4px 24px -1 rgba(0, 0, 0, 0.4); /*  shadow for depth */
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+nav ul {
+  list-style: none;
+  padding: 0;
+}
 
-  /* Media queries for responsiveness */
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #000000;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: calc(100% - 40px); /* Ensure it fits within the screen with margins */
+}
+
+.card {
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
+  background: linear-gradient(#ffffff57 , #ffffff15 );
+  border-radius: 45px;
+  backdrop-filter: blur(45px); /*  blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.18); /*  border to define edges */
+  box-shadow: 0 4px 24px -1 rgba(0, 0, 0, 0.4); /*  shadow for depth */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Media queries for responsiveness */
 @media (max-width: 768px) {
-  .card {
-    max-width: 80%;
-    max-height: 70%;
-  }
-  .logo {
-    max-width: 100%;
-    max-height: 60%;
-  }
-  #Header {
-    max-width: 100%;
-    max-height: 60%;
-  }
-  #Footer {
-    max-width: 100%;
-    max-height: 60%;
+  header, footer, .card, section {
+    margin: 10px;
+    width: calc(100% - 20px); /* Adjust margins for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
-  .card {
-    max-width: 100%;
-    max-height: 60%;
-  }
-  .logo {
-    max-width: 100%;
-    max-height: 60%;
-  }
-  #Header {
-    max-width: 100%;
-    max-height: 70%;
-  }
-  #Footer {
-    max-width: 100%;
-    max-height: 60%;
+  header, footer, .card, section {
+    margin: 5px;
+    width: calc(100% - 10px); /* Adjust margins for smaller screens */
   }
 }
-  
-  a {
-    color: #000000;
-  }
 
-  h2 {
-    color: #000000;
+a {
+  color: #000000;
 }
-  
-  h3 {
-    margin-top: 1rem;
-  }
-  .logo-container {
-    display: flex;
-  }
 
-  .logo {
-    display: inline-block;
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
+h2 {
+  color: #000000;
+}
 
+h3 {
+  margin-top: 1rem;
+}
 
+.logo-container {
+  display: flex;
+}
 
-  h3 a:hover {
-    color: #000000;
-    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
-  }
+.logo {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
 
-  p a:hover {
-    color: #000000;
-    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
-  }
-  
-  .logo:hover {
-    color: #000000;
-    filter: drop-shadow(0 0 15px #00ffff);
-  }
+h3 a:hover {
+  color: #000000;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+}
 
-  #Subheader {
-    color: #000000;
-  }
+p a:hover {
+  color: #000000;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+}
 
-  #Header {
-    color: #000000;
-    position: relative;
-    padding-bottom: 10px; /* Space for the line */
-  }
-  
-  #Header::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px; /* Line thickness */
-    background-color: #000; /* Line color */
-  }
-  
-  .section-header {
-    position: relative;
-    padding-bottom: 10px; /* Space for the line */
-  }
-  
-  .section-header::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0; /* Initially hidden */
-    height: 2px; /* Line thickness */
-    background-color: #000; /* Line color */
-    transition: width 0.5s; /* Animation duration */
-  }
-  
-  .section-header.active::after {
-    width: 100%; /* Line expands to full width */
-  }
+.logo:hover {
+  color: #000000;
+  filter: drop-shadow(0 0 15px #00ffff);
+}
 
-  @keyframes backgroundAnimation {
-    0% { background: linear-gradient(135deg, #ffcc33, #ff99cc); }
-    100% { background: linear-gradient(to right, red, orange); }
-  }
-  
-  .fade-in {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s, transform 3s;
-  }
-  
-  .fade-in.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
+#Subheader {
+  color: #000000;
+}
+
+#Header {
+  color: #000000;
+  position: relative;
+  padding-bottom: 10px; /* Space for the line */
+}
+
+#Header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* Line thickness */
+  background-color: #000; /* Line color */
+}
+
+.section-header {
+  position: relative;
+  padding-bottom: 10px; /* Space for the line */
+}
+
+.section-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0; /* Initially hidden */
+  height: 2px; /* Line thickness */
+  background-color: #000; /* Line color */
+  transition: width 0.5s; /* Animation duration */
+}
+
+.section-header.active::after {
+  width: 100%; /* Line expands to full width */
+}
+
+@keyframes backgroundAnimation {
+  0% { background: linear-gradient(135deg, #ffcc33, #ff99cc); }
+  100% { background: linear-gradient(to right, red, orange); }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 3s;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
