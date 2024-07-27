@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  margin: 0;
+  margin: 1rem 1rem 1rem 1rem;
   padding: 0;
   box-sizing: border-box;
   background: linear-gradient(135deg, #ffcc33, #ff99cc);
@@ -13,10 +13,9 @@ header {
   backdrop-filter: blur(45px); /* blur effect */
   border: 1px solid rgba(255, 255, 255, 0.18); /* border to define edges */
   box-shadow: 0 4px 24px -1 rgba(0, 0, 0, 0.4); /* shadow for depth */
-  padding: 1rem;
   text-align: center;
   border-radius: 10px;
-  margin: 20px;
+  margin: 1rem 1rem 1rem 1rem;
   width: calc(100% - 40px); /* Ensure it fits within the screen with margins */
   display: flex;
   flex-direction: column;
@@ -28,7 +27,6 @@ footer {
   backdrop-filter: blur(45px); /* blur effect */
   border: 1px solid rgba(255, 255, 255, 0.18); /* border to define edges */
   box-shadow: 0 4px 24px -1 rgba(0, 0, 0, 0.4); /* shadow for depth */
-  padding: 1rem;
   text-align: center;
   border-radius: 10px;
   margin: 20px;
