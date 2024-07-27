@@ -8,7 +8,7 @@ body {
   }
   
   header {
-    background: rgba(51, 51, 51, 0.9);
+    background: rgba(51, 51, 51, 0.582);
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -38,6 +38,11 @@ body {
     color: #fff;
     text-decoration: none;
   }
+
+  nav ul li a:hover {
+    color: #ff99cc;
+    text-shadow: 0 0 10px rgb(116, 165, 255);
+  }
   
   main {
     display: flex;
@@ -53,18 +58,50 @@ body {
     padding: 2rem;
     margin: 20px 0;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
   }
 
+ .main:hover {
+  box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
 
+ }
   
   h2 {
-    color: #333;
+    color: #3d3a3ab1;
   }
+
+  h2:hover {
+  color: #ff99cc;
+  text-shadow: 0 0 10px rgb(116, 165, 255);
+}
   
   h3 {
     margin-top: 1rem;
   }
+
+  h3 a:hover {
+    color: #ff99cc;
+    text-shadow: 0 0 10px rgb(116, 165, 255);
+  }
   
+  p a:hover {
+    color: #ff99cc;
+    text-shadow: 0 0 10px rgb(116, 165, 255);
+  }
+
+  #Subheader {
+    color: #ff99cc;
+    text-shadow: 0 0 10px rgb(116, 165, 255);
+  }
+
+  #Header {
+    color: #99ccff;
+    text-shadow: 0 0 10px rgba(255, 153, 204, 0.8);
+  }
+
   @keyframes backgroundAnimation {
     0% { background: linear-gradient(135deg, #ffcc33, #ff99cc); }
     100% { background: linear-gradient(135deg, #99ccff, #ffccff); }

@@ -5,8 +5,10 @@ const Education = () => {
     <section id="education">
       <h2>Education</h2>
       <div>
-        <p>University of California, Los Angeles</p>
-        <p>Details about the coursework.</p>
+        <p>University of California, Los Angeles 2014 - 2017</p>
+        <p>Mathematics and Computer Science - No Degree</p>
+        <p>Udacity, Self Driving Cars 2020 - 2021</p>
+        <p>Self Driving Cars - Nanodegree</p>
       </div>
     </section>
   );
