@@ -106,7 +106,6 @@ body {
 
   h2 {
     color: #000000;
-    text-shadow: 0 0 10px rgb(116, 165, 255);
 }
   
   h3 {
@@ -141,12 +140,10 @@ body {
 
   #Subheader {
     color: #000000;
-    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
   }
 
   #Header {
     color: #000000;
-    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
   }
 
   @keyframes backgroundAnimation {
