@@ -8,6 +8,7 @@ const About = () => {
     const handleDownload = () => {
         const link = document.createElement('a');
         link.href = process.env.PUBLIC_URL + '/Kimani_Muhammad_Software_Dev_Resume.pdf';
+        link.target = '_blank';
         link.setAttribute('download', 'Kimani_Muhammad_Software_Dev_Resume.pdf');
         document.body.appendChild(link);
         link.click();
