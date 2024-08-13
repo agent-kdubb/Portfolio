@@ -15,7 +15,7 @@ const Skills = () => {
         <li>CSS</li>
         <li>Python</li>
         <li>Git</li>
-        <li>Agile</li>
+        <li>Jira</li>
         <li>CI/CD</li>
         <li>DevOps</li>
         <li>Linux</li>
